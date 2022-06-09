@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aliolio</title>
+
+        <link rel="stylesheet" href="MyPage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!--외부에서 폰트 가져온 것-->
+
+    </head>
+    <body>
+        <!--네비게이션 바-->
+        <nav>
+            <div class="nav-left">
+                <img src="images/test2_logo.png" class="logo">
+            </div>
+            <div class="nav-center">
+                        <div class="search-box">
+                            <img src="images/test_searchIcon.png">
+                            <form><input type="text" placeholder="Search"></form>
+                        </div>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><img src='images/test_icon_home.png' class="home-icon" onclick= "location.href='MainPage.html'"></li>
+                    <li><img src='images/test_icon_folder.png' class="icon"></li>
+                
+                </ul>
+                <div class="upload-icon" onclick="settingsMenuToggle()">
+                    <img src="images/test_icon_upload.png">
+                </div>
+                
+                </ul>
+                <div class="nav-user-icon">
+                    <img class="user-icon" src="images/test_user_icon.jpg" onclick= "location.href='MyPage.html'">
+                </div>
+    
+            </div>
+
+            <!--게시물 업로드 칸-->
+
+            <div class="settings-menu">
+                <div class="settings-menu-inner">
+                    
+                    <div class="user-profile">
+                        <img src="images/upload_button.png" width="40px">
+                        <div>
+                            
+                            <a class="upload" onclick= "location.href='UploadPage.html'">Upload Image </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-links">
+                        <img src="images/setting.png" class="settings-icon">
+                        <a href="">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/help.png" class="settings-icon">
+                        <a href="">Help & Support <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/display.png" class="settings-icon">
+                        <a href="">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="images/logout.png" class="settings-icon">
+                        <a class="logout-sign" onclick= "location.href='LoginPage.html'">Logout <img src="images/arrow.png" width="10px"></a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+
+        <!--콘테이너 시작-->
+
+    <div class="container">
+        <!-----------------------left-sidebar----------------------->
+    <div class="left-sidebar">
+        <div class="imp-links">
+                <a href="#"><img src="images/전체.png"> &nbsp;전체</a>
+                <a href="#"><img src="images/디자인.png"> &nbsp;디자인</a>
+                <a href="#"><img src="images/개발.png"> &nbsp;개발</a>
+                <a href="#"><img src="images/음악.png"> &nbsp;음악</a>
+                <a href="#"><img src="images/사진.png"> &nbsp;사진</a>
+        </div>
+    </div>
+        
+
+<!--마이페이지-->
+        <main class="main-profile">
+            <div class="profile-container">
+                <div class="main-profile-div"> 
+                    <div class="pp-img-div"> <!--프로필 사진-->
+                        <img src="images/profile.png">
+                    </div>
+                    <div class="profile-infos">
+                        <div class="pi-header">
+                            <h2>@ppaulcasso</h2>
+                            <button>프로필 설정</button>
+                        </div>
+                        <ul class="pi-counts">
+                            <li>게시물 6</li>
+                            <li>팔로워 154123</li>
+                            <li>팔로잉 152</li>
+                        </ul>
+                        <div class="profile-name">
+                            <strong>김바울</strong> <!--강조할 때 사용, 굵은텍스트로 표현-->
+                        </div>
+                        <div class="profile-bio">
+                            <p>반가워요!</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="profile-divider">
+                    <a href="#" class="active">나의 게시물</a>
+                </div> 
+    
+                <div class="profile-posts">
+                    <img src="images/my_image1.jpg" class="profile-single-posts">
+                    <img src="images/my_image2.jpg" class="profile-single-posts">
+                    <img src="images/my_image3.jpg" class="profile-single-posts">
+                    <img src="images/my_image4.jpg" class="profile-single-posts">
+                    <img src="images/my_image5.jpg" class="profile-single-posts">
+                    <img src="images/my_image6.jpg" class="profile-single-posts">
+                </div>
+            </div>
+        </main>
+        <script src="MainPage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aliolio </title>
+    <link rel="stylesheet" href="MainPage.css">
+</head>
+<body>
+    
+
+    <!--네비게이션 바-->
+    <nav>
+        <div class="nav-left">
+            <img src="images/test2_logo.png" class="logo">
+        </div>
+        <div class="nav-center">
+                    <div class="search-box">
+                        <img src="images/test_searchIcon.png">
+                        <form><input type="text" placeholder="Search"></form>
+                    </div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><img src='images/test_icon_home.png' class="home-icon" onclick= "location.href='MainPage.html'"></li>
+                
+                <li><img src='images/test_icon_folder.png' class="icon"></li>
+
+            </ul>
+            <div class="upload-icon" onclick="settingsMenuToggle()">
+                <img src="images/test_icon_upload.png">
+            </div>
+
+            </u2>
+            <div class="nav-user-icon">
+                <img class="user-icon" src="images/test_user_icon.jpg" onclick= "location.href='MyPage.html'">
+            </div>
+            
+
+        </div>
+
+
+        <!--게시물 업로드 칸-->
+
+                <div class="settings-menu">
+            <div class="settings-menu-inner">
+                
+                <div class="user-profile">
+                    <img src="images/upload_button.png">
+                    <div>
+                        
+                        <a class="upload" onclick= "location.href='UploadPage.html'">Upload Image </a>
+                    </div>
+                </div>
+                
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a class="logout-sign" onclick= "location.href='LoginPage.html'">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+        <!-- ------dropdown-settings-menu--------- -->
+        
+
+<!--콘테이너 시작-->
+
+    <div class="container">
+        <!-----------------------left-sidebar----------------------->
+    <div class="left-sidebar">
+        <div class="imp-links">
+                <a href="MainPage.html"><img src="images/전체.png"> &nbsp;전체</a>
+                <a href="MainPage_Music.html"><img src="images/음악.png"> &nbsp;음악</a>
+                <a href="MainPage_Design.html"><img src="images/디자인.png"> &nbsp;디자인</a>
+                <a href="MainPage_Code.html"><img src="images/개발.png"> &nbsp;개발</a>
+                <a href="MainPage_Picture.html"><img src="images/사진.png"> &nbsp;사진</a>
+        </div>
+    </div>
+        <!-----------------------main content----------------------->
+        <div class="main-content">
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/test_user_icon.jpg">
+                    <div>
+                        <p>김바울</p>
+                        <small>Public <i class="ri-arrow-down-s-fill"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <form>
+                    <textarea rows="3" placeholder="어떤 작업을 하셨나요?(개발중)"></textarea>
+                    </form>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/upload-디자인.png" onmouseover="this.src='images/upload-디자인-hover.png'" onmouseout="this.src='images/upload-디자인.png'"> </a>
+                        <a href="#"><img src="images/upload-개발.png" onmouseover="this.src='images/upload-개발-hover.png'" onmouseout="this.src='images/upload-개발.png'"> </a>
+                        <a href="#"><img src="images/upload-음악.png" onmouseover="this.src='images/upload-음악-hover.png'" onmouseout="this.src='images/upload-음악.png'"> </a>
+                        <a href="#"><img src="images/upload-사진.png" onmouseover="this.src='images/upload-사진-hover.png'" onmouseout="this.src='images/upload-사진.png'"> </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/test_user_icon.jpg">
+                    <div>
+                        <p>김바울</p>
+                        <span>2022-05-24, 11:09</span>
+                    </div>
+                </div>
+                <p class="post-text"><a href=#>[음악]</a> 안녕 10대 - 김바울</p>
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1206934042&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/n9tknltrsdq1" title="Ppaul" target="_blank" style="color: #cccccc; text-decoration: none;">Ppaul</a> · <a href="https://soundcloud.com/n9tknltrsdq1/10a" title="안녕 10대" target="_blank" style="color: #cccccc; text-decoration: none;">안녕 10대</a></div>
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/test_user_icon.jpg">
+                    <div>
+                        <p>김바울</p>
+                        <span>2022-05-27, 18:09</span>
+                    </div>
+                </div>
+                <p class="post-text"><a href=#>[음악]</a> 여기어때 - 장범준</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2oWEsABmFZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/test_user_icon.jpg">
+                    <div>
+                        <p>김바울</p>
+                        <span>2022-05-24, 11:09</span>
+                    </div>
+                </div>
+                <p class="post-text"><a href=#>[음악]</a> 추적이는 여름 비가 되어 - 장범준</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/V47v-AXQBSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+             </div>
+
+        <!-----------------------right-sidebar----------------------->
+        
+    </div>
+</div>
+
+<script src="MainPage.js"></script>
+</body>
+</html>

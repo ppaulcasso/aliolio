@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    display: flex; /*가로 방향으로 배치됨, 자신이 가진 내용물의 width만큼 차지*/
+    min-height: 90vh; /*vh=viewport height*/
+    align-items: center;
+    justify-content: center;
+    background: #FFE088;
+    font-family: sans-serif;
+    
+}
+
+.login-form{
+    text-align: center;
+    
+}
+.sign-up-form{
+    text-align:center;
+}
+
+.text{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+.login-box{
+    width: 350px;
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    box-shadow: 0 5px 25px rgb(0 0 0/10%);
+}
+.signup-box{
+    width: 350px;
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    box-shadow: 0 5px 25px rgb(0 0 0/10%);
+}
+.title{
+    padding: 30px 0;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+form{
+    width: 75%;
+    display: flex;
+    flex-direction: column; /*위에서 아래로*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /*X축만큼 이동*/
+   
+}
+form input{
+    margin-bottom: 5px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 3px;
+}
+
+input[type=text],input[type=password]{
+    padding-left: 10px;
+    position: relative;
+    height: 35px;
+    font-size: 13px;
+    font-family: 'GmarketSansLight'
+
+}
+input::placeholder{
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.05s ease; /*focus::placeholder의 속도 조절*/
+    
+}
+input:focus::placeholder{ /**/
+    position: absolute;
+    font-size: 10px;
+}
+.button {
+    border: none;
+    background: #bd9b3f;
+    padding: 5px 0;
+    margin-top: 5px;
+    color:#fff;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px; /*글자 사이의 간격*/
+    cursor: pointer; /*마우스 커서 모양 설정 --> 포인터 모양으로*/
+    font-weight:bold;
+    font-family: 'GmarketSansLight';
+}
+.button:active{
+    background: hsl(44, 60%, 62%);
+    transform: scale(0.995); /*가로세로 모두 확대*/
+}
+
+.btn_signup{
+    border: none;
+    background: #bd9b3f;
+    padding: 5px 0;
+    margin-top: 5px;
+    color:#fff;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px; /*글자 사이의 간격*/
+    cursor: pointer; /*마우스 커서 모양 설정 --> 포인터 모양으로*/
+    font-family: 'GmarketSansLight';
+}
+
+.page .signup{
+    position: relative;
+    border: 1px solid #b6b6b6;
+    border-radius: 3px;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%); /*x축만큼 이동*/
+    margin-top:30px;
+}
+.signup a{
+    text-decoration: none; /*텍스트 선 없애기*/
+    color: black;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium'
+}
+
+.page .login{
+    position: relative;
+    border: 1px solid #b6b6b6;
+    border-radius: 3px;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%); /*x축만큼 이동*/
+    margin-top:30px;
+    font-family: 'GmarketSansMedium'
+}
+.login a{
+    text-decoration: none; /*텍스트 선 없애기*/
+    color: black;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium'
+}
+
+p {
+    font-weight: bold;
+    font-family: 'GmarketSansLight'
+}

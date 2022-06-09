@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Page</title>
+    <link rel="stylesheet" href="UploadPage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-upload" id="image-upload">
+
+            <form method="post" enctype="multipart/form-data"> <!--이미지 파일 데이터를 받아야 하기 때문에 enctype을 "multipart/form-data"로 설정하고 input 태그의 type을 "file"로 설정-->
+                <div class="button">
+                    <label for="chooseFile">
+                        👉 CLICK HERE! 👈
+                    </label>
+                </div>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            </form>
+
+            <div class="fileContainer">
+                <div class="fileInput">
+                    <p>FILE NAME: </p>
+                    <p id="fileName"></p>
+                </div>
+                <div class="buttonContainer">
+                    <button class="submitButton" id="submitButton" onclick= "location.href='MainPage2.html'">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-show" id="image-show"></div>
+    </div>
+
+    <script src="UploadPage.js"></script>
+</body>
+</html>
