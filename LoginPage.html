@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aliolio</title>
+        <link rel="stylesheet" href="LoginPage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="form-container login-form">
+        <!--로그인-->
+            <div class="login-box">
+                <div class="title">Aliolio</div>
+                <form>
+                    <input type="text" name="userid" onkeyup="enterkey(this.form)"  placeholder="사용자 이름 또는 이메일">
+                    <input type="password" name="userpassword" onkeyup="enterkey(this.form)" placeholder="비밀번호">
+                    <input class="button" type="button" name="button" onclick="check(this.form)" value="로그인"/>
+                </form>
+                <div class="signup">
+                    <p>계정이 없으신가요?<a href="SignUpPage.html"> 회원가입</a></p>
+                </div>
+            </div>
+        </div>
+    
+    <script src="LoginPage.js">
+    </script>
+    </body>
+</html>
